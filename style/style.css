@@ -22,6 +22,7 @@ main {
 .header_left,
 .header_right {
   width: 32%;
+  padding: 0.5em 0;
 }
 .header_center {
   width: 36%;
