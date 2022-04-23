@@ -1,0 +1,259 @@
+img {
+  width: 100%;
+}
+header,
+footer {
+  width: 100%;
+  min-width: 280px;
+  box-sizing: border-box;
+  background-color: #ff1d03;
+  text-align: center;
+  color: #fff;
+}
+main {
+  font-family: serif;
+}
+.header {
+  display: flex;
+  font-size: 2em;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header_left,
+.header_right {
+  width: 32%;
+}
+.header_center {
+  width: 36%;
+}
+.unit {
+  font-size: 0.5em;
+}
+.date {
+  font-size: 3em;
+}
+footer {
+  padding: 1em;
+}
+
+.slide {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  min-height: 813px;
+  color: #ff1d03;
+}
+
+.list_innner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.innner_text,
+.innner_img {
+  position: relative;
+  width: 2400px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-height: 813px;
+  z-index: 10;
+}
+.loop .innner_text {
+  font-size: 2em;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  z-index: 8;
+}
+.loop2 .innner_text {
+  font-size: 1.5em;
+  z-index: 5;
+}
+.loop3 .innner_text {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  z-index: 3;
+}
+.innner_img {
+  z-index: 1;
+}
+.innner_text p {
+  position: absolute;
+  text-shadow: 0.5em 0.5em 3px rgb(211 208 208 / 70%);
+}
+.innner_text p:first-child {
+  top: 329px;
+  left: 10px;
+}
+.innner_text p:nth-of-type(2) {
+  top: 118px;
+  left: 538px;
+}
+.innner_text p:nth-of-type(3) {
+  top: 272px;
+  left: 1165px;
+}
+.innner_text p:nth-of-type(4) {
+  top: 71px;
+  left: 1573px;
+}
+.innner_text p:nth-of-type(5) {
+  top: 275px;
+  left: 1871px;
+}
+.loop2 .innner_text p:first-child {
+  top: 181px;
+  left: 250px;
+}
+.loop2 .innner_text p:nth-of-type(2) {
+  top: 321px;
+  left: 735px;
+}
+.loop2 .innner_text p:nth-of-type(3) {
+  top: 72px;
+  left: 796px;
+}
+.loop2 .innner_text p:nth-of-type(4) {
+  top: 711px;
+  left: 1173px;
+}
+.loop2 .innner_text p:nth-of-type(5) {
+  top: 91px;
+  left: 1871px;
+}
+.loop3 .innner_text p:first-child {
+  top: 318px;
+  left: 447px;
+}
+.loop3 .innner_text p:nth-of-type(2) {
+  top: 435px;
+  left: 900px;
+}
+.loop3 .innner_text p:nth-of-type(3) {
+  top: 171px;
+  left: 1324px;
+}
+.loop3 .innner_text p:nth-of-type(4) {
+  top: 584px;
+  left: 1773px;
+}
+.loop3 .innner_text p:nth-of-type(5) {
+  top: 687px;
+  left: 2274px;
+}
+.slide_img {
+  position: absolute;
+  width: 20em;
+  height: 20em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 10px solid;
+  border-image: linear-gradient(to right bottom, #e0d9b6, #b4983a) 1 / 10px;
+  box-shadow: 0px 0px 8px 3px #706e6e inset;
+}
+.slide_img::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: inherit;
+  box-shadow: 331px 14px 12px 2px #706e6e;
+}
+.slide_img::after {
+  content: "";
+  position: absolute;
+  width: inherit;
+  height: 2px;
+  box-shadow: 14px 331px 12px 2px #706e6e;
+}
+.rainSkip,
+.watashinokuni,
+.ijidemo {
+  background-position: center;
+}
+.innner_img .slide_img:first-child {
+  top: 112px;
+  left: 57px;
+}
+.innner_img .slide_img:nth-of-type(2) {
+  top: 440px;
+  left: 500px;
+}
+.innner_img .slide_img:nth-of-type(3) {
+  top: 25px;
+  left: 954px;
+}
+.innner_img .slide_img:nth-of-type(4) {
+  top: 362px;
+  left: 1373px;
+}
+.innner_img .slide_img:nth-of-type(5) {
+  top: 295px;
+  left: 1880px;
+}
+
+.loop_first {
+  animation: slide1 60s -30s linear infinite;
+}
+.loop_last {
+  animation: slide2 60s linear infinite;
+}
+.loop .loop_first,
+.loop .loop_last {
+  animation-duration: 61s;
+}
+.loop2 .loop_first,
+.loop .loop_last {
+  animation-duration: 59s;
+}
+
+@keyframes slide1 {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-200%);
+  }
+}
+
+@media (max-width: 1000px) {
+  .header_left {
+    width: 100%;
+  }
+  .header_left br {
+    display: none;
+  }
+  .header_center,
+  .header_right {
+    width: 50%;
+  }
+}
+@media (max-width: 650px) {
+  .header {
+    font-size: 1.5em;
+  }
+  .date {
+    font-size: 2em;
+  }
+  .header_center,
+  .header_right {
+    width: 100%;
+  }
+}
