@@ -36,6 +36,9 @@ main {
 footer {
   padding: 1em;
 }
+.innner {
+  padding-bottom: 3em;
+}
 
 .slide {
   position: relative;
@@ -234,6 +237,38 @@ footer {
   }
 }
 
+.caption {
+  padding: 2em 2em 0;
+  font-size: 1.5em;
+}
+.area {
+  text-align: center;
+  padding: 2em;
+  font-size: 1.2em;
+  color: #ff1d03;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.map iframe {
+  width: 30%;
+  height: 22vw;
+}
+.text_container {
+  width: 57%;
+  max-width: 600px;
+  padding-left: 3em;
+}
+.text_container h3 {
+  font-size: 1.2em;
+}
+.text_container h3,
+.text_container p {
+  padding-bottom: 0.5em;
+}
+
 @media (max-width: 1000px) {
   .header_left {
     width: 100%;
@@ -244,6 +279,11 @@ footer {
   .header_center,
   .header_right {
     width: 50%;
+  }
+  .address span,
+  .tel span,
+  .hour {
+    display: none;
   }
 }
 @media (max-width: 650px) {
@@ -256,5 +296,20 @@ footer {
   .header_center,
   .header_right {
     width: 100%;
+  }
+  .map {
+    flex-wrap: wrap;
+  }
+  .map iframe {
+    width: 80%;
+    height: 80vw;
+    border: 0;
+  }
+  .text_container {
+    width: 80%;
+    padding: 1em;
+  }
+  .text_container h3 {
+    padding-top: 0.5em;
   }
 }
