@@ -12,6 +12,7 @@ footer {
 }
 main {
   font-family: serif;
+  min-width: 280px;
 }
 .header {
   display: flex;
@@ -95,32 +96,36 @@ footer {
   text-shadow: 0.5em 0.5em 3px rgb(211 208 208 / 70%);
 }
 .innner_text p:first-child {
-  top: 329px;
-  left: 10px;
+  top: 448px;
+  left: 117px;
 }
 .innner_text p:nth-of-type(2) {
   top: 118px;
   left: 538px;
 }
 .innner_text p:nth-of-type(3) {
-  top: 272px;
-  left: 1165px;
+  top: 330px;
+  left: 1072px;
 }
 .innner_text p:nth-of-type(4) {
-  top: 71px;
-  left: 1573px;
+  top: 29px;
+  left: 1516px;
 }
 .innner_text p:nth-of-type(5) {
   top: 275px;
-  left: 1871px;
+  left: 1777px;
+}
+.innner_text p:nth-of-type(6) {
+  top: 35px;
+  left: 2141px;
 }
 .loop2 .innner_text p:first-child {
   top: 181px;
   left: 250px;
 }
 .loop2 .innner_text p:nth-of-type(2) {
-  top: 321px;
-  left: 735px;
+  top: 262px;
+  left: 674px;
 }
 .loop2 .innner_text p:nth-of-type(3) {
   top: 72px;
@@ -133,6 +138,10 @@ footer {
 .loop2 .innner_text p:nth-of-type(5) {
   top: 91px;
   left: 1871px;
+}
+.loop2 .innner_text p:nth-of-type(6) {
+  top: 519px;
+  left: 1841px;
 }
 .loop3 .innner_text p:first-child {
   top: 318px;
@@ -148,11 +157,15 @@ footer {
 }
 .loop3 .innner_text p:nth-of-type(4) {
   top: 584px;
-  left: 1773px;
+  left: 1703px;
 }
 .loop3 .innner_text p:nth-of-type(5) {
-  top: 687px;
-  left: 2274px;
+  top: 627px;
+  left: 2000px;
+}
+.loop3 .innner_text p:nth-of-type(6) {
+  top: 148px;
+  left: 2374px;
 }
 .slide_img {
   position: absolute;
@@ -189,19 +202,23 @@ footer {
 }
 .innner_img .slide_img:nth-of-type(2) {
   top: 440px;
-  left: 500px;
+  left: 483px;
 }
 .innner_img .slide_img:nth-of-type(3) {
   top: 25px;
-  left: 954px;
+  left: 913px;
 }
 .innner_img .slide_img:nth-of-type(4) {
-  top: 362px;
-  left: 1373px;
+  top: 235px;
+  left: 1309px;
 }
 .innner_img .slide_img:nth-of-type(5) {
-  top: 295px;
-  left: 1880px;
+  top: 19px;
+  left: 1700px;
+}
+.innner_img .slide_img:nth-of-type(6) {
+  top: 375px;
+  left: 2063px;
 }
 
 .loop_first {
@@ -237,24 +254,39 @@ footer {
   }
 }
 
+.message
+/* ,.artist */ {
+  background-color: #ff1d03;
+}
+.contents_inner {
+  padding: 2em;
+}
+.back_white {
+  background-color: #fff;
+  padding: 2em;
+}
 .caption {
   padding: 2em 2em 0;
   font-size: 1.5em;
 }
-.area {
-  text-align: center;
-  padding: 2em;
+.quote {
+  text-align: right;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.img_container {
+  width: 30%;
+}
+.artist_name {
   font-size: 1.2em;
   color: #ff1d03;
 }
-.map {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 2em;
-}
-.map iframe {
-  width: 30%;
-  height: 22vw;
+.music {
+  padding-top: 1em;
+  color: #ff1d03;
 }
 .text_container {
   width: 57%;
@@ -268,6 +300,39 @@ footer {
 .text_container p {
   padding-bottom: 0.5em;
 }
+.text_container .last_of_paragraph {
+  padding-bottom: 1em;
+}
+.message .text_container .last_of_paragraph:nth-of-type(3) {
+  padding-bottom: 2em;
+}
+.access {
+  background: url(../img/shop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-blend-mode: lighten;
+}
+.area {
+  text-align: center;
+  padding: 2em;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ff1d03;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2em;
+}
+.map iframe {
+  width: 30%;
+  height: 22vw;
+}
+.map .text_container h3,
+.map .text_container p {
+  background-color: #fff;
+}
 
 @media (max-width: 1000px) {
   .header_left {
@@ -280,10 +345,31 @@ footer {
   .header_right {
     width: 50%;
   }
+  .img_container {
+    width: 80%;
+    max-width: 200px;
+  }
   .address span,
   .tel span,
   .hour {
     display: none;
+  }
+}
+@media (max-width: 760px) {
+  .text_container {
+    width: 80%;
+    padding: 1em;
+  }
+  .text_container h3 {
+    padding-top: 0.5em;
+  }
+  .map {
+    flex-wrap: wrap;
+  }
+  .map iframe {
+    width: 80%;
+    height: 80vw;
+    border: 0;
   }
 }
 @media (max-width: 650px) {
@@ -297,19 +383,17 @@ footer {
   .header_right {
     width: 100%;
   }
-  .map {
-    flex-wrap: wrap;
-  }
-  .map iframe {
-    width: 80%;
-    height: 80vw;
-    border: 0;
-  }
-  .text_container {
-    width: 80%;
+  .contents_inner,
+  .back_white {
     padding: 1em;
   }
+  .caption,
   .text_container h3 {
-    padding-top: 0.5em;
+    font-size: 1em;
+  }
+}
+@media (max-width: 550px) {
+  .text_container br {
+    display: none;
   }
 }
