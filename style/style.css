@@ -37,9 +37,9 @@ main {
 footer {
   padding: 1em;
 }
-.innner {
+/* .inner {
   padding-bottom: 3em;
-}
+} */
 
 .slide {
   position: relative;
