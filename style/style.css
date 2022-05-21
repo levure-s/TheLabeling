@@ -31,8 +31,8 @@ main {
 .unit {
   font-size: 0.5em;
 }
-.date {
-  font-size: 3em;
+.number {
+  font-size: 2em;
 }
 footer {
   padding: 1em;
