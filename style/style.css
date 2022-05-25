@@ -298,7 +298,7 @@ footer {
 }
 .text_container h3,
 .text_container p {
-  padding: 0.5em;
+  padding-bottom: 0.5em;
 }
 .text_container .last_of_paragraph {
   padding-bottom: 1em;
@@ -330,15 +330,22 @@ footer {
   height: 22vw;
 }
 .text_inner {
+  padding: 0.5em;
   background-color: #fff;
 }
 .text_inner .flex {
   justify-content: flex-start;
   align-items: center;
+  padding-bottom: 0.5em;
+}
+.text_container .text_inner h3 {
+  padding: 0;
+  padding-right: 0.5em;
 }
 .tag {
   background-color: #b4983a;
   color: #fff;
+  padding: 0.5em;
   font-size: 0.8em;
   border-radius: 5px;
 }
