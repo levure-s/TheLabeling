@@ -298,7 +298,7 @@ footer {
 }
 .text_container h3,
 .text_container p {
-  padding-bottom: 0.5em;
+  padding: 0.5em;
 }
 .text_container .last_of_paragraph {
   padding-bottom: 1em;
@@ -329,9 +329,20 @@ footer {
   width: 30%;
   height: 22vw;
 }
-.map .text_container h3,
-.map .text_container p {
+.text_inner {
   background-color: #fff;
+}
+.map .text_container p {
+  font-size: 0.8em;
+}
+.text_inner .flex {
+  justify-content: flex-start;
+  align-items: center;
+}
+.tag {
+  background-color: #b4983a;
+  color: #fff;
+  border-radius: 5px;
 }
 
 @media (max-width: 1000px) {
