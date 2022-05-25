@@ -332,9 +332,6 @@ footer {
 .text_inner {
   background-color: #fff;
 }
-.map .text_container p {
-  font-size: 0.8em;
-}
 .text_inner .flex {
   justify-content: flex-start;
   align-items: center;
@@ -342,6 +339,7 @@ footer {
 .tag {
   background-color: #b4983a;
   color: #fff;
+  font-size: 0.8em;
   border-radius: 5px;
 }
 
