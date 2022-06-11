@@ -17,6 +17,10 @@ main {
 a {
   text-decoration: none;
 }
+iframe {
+  width: 100%;
+  height: 100%;
+}
 .header {
   display: flex;
   font-size: 2em;
@@ -257,8 +261,8 @@ footer {
   }
 }
 
-.message
-/* ,.artist */ {
+.message,
+.artist {
   background-color: #ff1d03;
 }
 .contents_inner {
@@ -308,6 +312,16 @@ footer {
 }
 .message .text_container .last_of_paragraph:nth-of-type(3) {
   padding-bottom: 2em;
+}
+.youtube_container {
+  justify-content: space-evenly;
+  padding-bottom: 5em;
+}
+.youtube {
+  width: 20%;
+  min-width: 178px;
+  height: calc((100vw - 4em) * 117 / 329);
+  min-height: 323px;
 }
 .access {
   background: url(../img/shop.jpg);
@@ -398,6 +412,16 @@ footer {
     height: 80vw;
     border: 0;
   }
+  .youtube_container {
+    padding-bottom: 1em;
+  }
+  .youtube {
+    width: 40%;
+    /* max-width: 262px; */
+    height: calc((100vw - 2em) * 234 / 329);
+    /* max-height: 497px; */
+    padding-bottom: 4em;
+  }
 }
 @media (max-width: 650px) {
   .header {
@@ -422,5 +446,13 @@ footer {
 @media (max-width: 550px) {
   .text_container br {
     display: none;
+  }
+
+  .youtube {
+    width: 80%;
+    max-width: 262px;
+    height: calc((100vw - 2em) * 468 / 329);
+    max-height: 497px;
+    padding-bottom: 2em;
   }
 }
