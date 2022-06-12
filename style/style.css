@@ -314,14 +314,12 @@ footer {
   padding-bottom: 2em;
 }
 .youtube_container {
-  justify-content: space-evenly;
+  text-align: center;
   padding-bottom: 5em;
 }
-.youtube {
-  width: 20%;
-  min-width: 178px;
-  height: calc((100vw - 4em) * 117 / 329);
-  min-height: 323px;
+.youtube_container iframe {
+  max-width: 750px;
+  max-height: 427.5px;
 }
 .access {
   background: url(../img/shop.jpg);
@@ -415,13 +413,6 @@ footer {
   .youtube_container {
     padding-bottom: 1em;
   }
-  .youtube {
-    width: 40%;
-    /* max-width: 262px; */
-    height: calc((100vw - 2em) * 234 / 329);
-    /* max-height: 497px; */
-    padding-bottom: 4em;
-  }
 }
 @media (max-width: 650px) {
   .header {
@@ -446,13 +437,5 @@ footer {
 @media (max-width: 550px) {
   .text_container br {
     display: none;
-  }
-
-  .youtube {
-    width: 80%;
-    max-width: 262px;
-    height: calc((100vw - 2em) * 468 / 329);
-    max-height: 497px;
-    padding-bottom: 2em;
   }
 }
