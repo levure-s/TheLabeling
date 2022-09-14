@@ -265,6 +265,8 @@ footer {
   background-color: #ff1d03;
 }
 .contents_inner {
+  max-width: 1200px;
+  margin: auto;
   padding: 2em;
 }
 .back_white {
