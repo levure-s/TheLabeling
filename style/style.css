@@ -261,8 +261,7 @@ footer {
   }
 }
 
-.message,
-.artist {
+.message {
   background-color: #ff1d03;
 }
 .contents_inner {
